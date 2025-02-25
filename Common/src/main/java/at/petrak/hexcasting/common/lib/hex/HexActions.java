@@ -170,6 +170,8 @@ public class HexActions {
         new OperationAction(HexPattern.fromAngles("wdw", HexDir.NORTH_EAST)));
     public static final ActionRegistryEntry OR = make("or",
         new OperationAction(HexPattern.fromAngles("waw", HexDir.SOUTH_EAST)));
+    public static final ActionRegistryEntry NOT = make("not",
+        new OperationAction(HexPattern.fromAngles("dw", HexDir.NORTH_WEST)));
     public static final ActionRegistryEntry XOR = make("xor",
         new OperationAction(HexPattern.fromAngles("dwa", HexDir.NORTH_WEST)));
     public static final ActionRegistryEntry GREATER = make("greater", new OperationAction(
@@ -188,8 +190,8 @@ public class HexActions {
         new ActionRegistryEntry(HexPattern.fromAngles("ad", HexDir.EAST), new OpEquality(false)));
     public static final ActionRegistryEntry NOT_EQUALS = make("not_equals",
         new ActionRegistryEntry(HexPattern.fromAngles("da", HexDir.EAST), new OpEquality(true)));
-    public static final ActionRegistryEntry NOT = make("not",
-        new ActionRegistryEntry(HexPattern.fromAngles("dw", HexDir.NORTH_WEST), OpBoolNot.INSTANCE));
+    // public static final ActionRegistryEntry NOT = make("not",
+    //     new ActionRegistryEntry(HexPattern.fromAngles("dw", HexDir.NORTH_WEST), OpBoolNot.INSTANCE));
     public static final ActionRegistryEntry BOOL_COERCE = make("bool_coerce",
         new ActionRegistryEntry(HexPattern.fromAngles("aw", HexDir.NORTH_EAST), OpCoerceToBool.INSTANCE));
     public static final ActionRegistryEntry IF = make("if",
