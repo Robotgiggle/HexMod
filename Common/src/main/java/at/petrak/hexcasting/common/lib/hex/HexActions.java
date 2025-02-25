@@ -174,18 +174,14 @@ public class HexActions {
         new OperationAction(HexPattern.fromAngles("dw", HexDir.NORTH_WEST)));
     public static final ActionRegistryEntry XOR = make("xor",
         new OperationAction(HexPattern.fromAngles("dwa", HexDir.NORTH_WEST)));
-    public static final ActionRegistryEntry GREATER = make("greater", new OperationAction(
-        HexPattern.fromAngles("e", HexDir.SOUTH_EAST))
-    );
-    public static final ActionRegistryEntry LESS = make("less", new OperationAction(
-        HexPattern.fromAngles("q", HexDir.SOUTH_WEST))
-    );
-    public static final ActionRegistryEntry GREATER_EQ = make("greater_eq", new OperationAction(
-        HexPattern.fromAngles("ee", HexDir.SOUTH_EAST))
-    );
-    public static final ActionRegistryEntry LESS_EQ = make("less_eq", new OperationAction(
-        HexPattern.fromAngles("qq", HexDir.SOUTH_WEST))
-    );
+    public static final ActionRegistryEntry GREATER = make("greater", 
+        new OperationAction(HexPattern.fromAngles("e", HexDir.SOUTH_EAST)));
+    public static final ActionRegistryEntry LESS = make("less",
+        new OperationAction(HexPattern.fromAngles("q", HexDir.SOUTH_WEST)));
+    public static final ActionRegistryEntry GREATER_EQ = make("greater_eq", 
+        new OperationAction(HexPattern.fromAngles("ee", HexDir.SOUTH_EAST)));
+    public static final ActionRegistryEntry LESS_EQ = make("less_eq", 
+        new OperationAction(HexPattern.fromAngles("qq", HexDir.SOUTH_WEST)));
     public static final ActionRegistryEntry EQUALS = make("equals",
         new ActionRegistryEntry(HexPattern.fromAngles("ad", HexDir.EAST), new OpEquality(false)));
     public static final ActionRegistryEntry NOT_EQUALS = make("not_equals",
